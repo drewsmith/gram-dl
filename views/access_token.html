@@ -1,0 +1,5 @@
+<script>
+var hash = window.location.hash;
+var stripped = hash.split('#access_token=')[1];
+window.location = "http://localhost:3000/oauth/cb?h=" + stripped
+</script>
